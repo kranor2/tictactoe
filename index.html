@@ -7,7 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+
+    <section>
+        <div class="game-board">
+            <div class="col"> 
+                <div class="top" id="top1"></div>
+                <div class="top" id="top2"></div>
+                <div class="top" id="top3"></div>
+            </div>
+            <div class="col"> 
+                <div class="mid" id="mid1"></div>
+                <div class="mid" id="mid2"></div>
+                <div class="mid" id="mid3"></div>
+            </div>
+            <div class="col"> 
+                <div class="bottom" id="bottom1"></div>
+                <div class="bottom" id="bottom2"></div>
+                <div class="bottom" id="bottom3"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div id="Result"></div>
+        <button>Quit</button>
+        <button>Restart</button>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
