@@ -178,7 +178,7 @@ function ScreenController() {
     }
         
     const renderGameOverScreen = function(result) {
-        const gameScreen = document.querySelector("player-menu");
+        const gameScreen = document.querySelector(".player-menu");
         gameScreen.classList.add("faded");
 
         const gameOverScreen = document.querySelector(".game-over-modal");
