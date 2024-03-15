@@ -30,7 +30,7 @@ function Gameboard() {
         });
     }
 
-    return {getBoard, addMove, getBoardWithValues, restart}
+    return {getBoard, addMove, getBoardWithValues, boardReset}
 }    
 
 function Game() {
