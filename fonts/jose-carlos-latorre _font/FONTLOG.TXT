@@ -1,0 +1,26 @@
+FONTLOG
+Jose Carlos Latorre
+===================
+
+This file provides detailed information on the Jose Carlos Latorre Font.
+
+Basic Font Information
+----------------------
+
+Jose Carlos Latorre font was born out of the idea to immortalize my own
+handwriting. Since I have memory my teachers and everyone told me that
+my handwriting was terrible so I decided to put it in a True Type Font
+for future generations and so that they can annoy their professors as 
+well.
+
+ChangeLog
+---------
+
+2015 April 2 Version 0.1
+    
+    * Font generated after some days of hard work.
+    * Lots of TODO that will we done or not.
+
+Acknowledgements
+----------------
+Avital.

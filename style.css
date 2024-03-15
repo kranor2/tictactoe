@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Decovar";
+    src: url(./fonts/Decovar_font/fonts/Decovar-VF.ttf);
+    font-family: "Jose Carlos Latorre";
+    src: url(./fonts/jose-carlos-latorre\ _font/Jose.ttf);
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Jose Carlos Latorre", sans-serif;
+    background-image: url(./imgs/dinosaur-bkgd.jpg);
+}
+
+h1 {
+    font-family: "Decovar", "Helvetica", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    width: 100%;
+    height: 100px;
+    color: #0e3d06;
+}
+
+.player-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 5px solid #e7f5f6;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+form > div {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+form label {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: #e7f5f6;
+}
+
+form input {
+    height: 2.2rem;
+    width: 260px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 8px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    outline: none;
+    transition: box-shadow 0.15s;
+}
+
+form input:focus{
+    box-shadow: rgba(21, 68, 38, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -128px inset;
+}
+
+form input:hover {
+    box-shadow: rgba(21, 68, 38, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -128px inset;
+}
+
+form button {
+    font-size: 1.5rem;
+    margin-top: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: #a2be71;
+    padding: 10px 40px;
+    border-radius: 200px;
+    font-weight: normal;
+    transition: box-shadow 0.15s;
+}
+
+form button:hover {
+    box-shadow: rgba(21, 68, 38, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -128px inset;
+}
+
+.faded {
+    opacity: 0.2;
+}
+
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 170px);
+    grid-template-rows: repeat(3, 170px);
+    border: 1px solid #212b21;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.playTurn {
+    margin-top: 25px;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #0e3d06;
+}
+
+.cell {
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    font-size: 8rem;
+    font-weight: normal;
+    border: 2px solid #212b21;
+    transition: background-color 0.15s;
+}
+
+.cell:active {
+    box-shadow: rgba(21, 68, 38, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.cell:hover {
+    background-color: #a2be71;
+}
+
+.game-over-modal {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 720px;
+    height: 250px;
+    border-radius: 25px;
+    background-color: #a2be71;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #0e3d06;
+}
+
+.hidden {
+    display: none;
+}
+
+.play-again-btn {
+    font-size: 1.7rem;
+    margin-top: 44px;
+    border: none;
+    cursor: pointer;
+    background-color: #0e3d06;
+    padding: 10px 40px;
+    border-radius: 200px;
+    font-weight: normal;
+    color: #a2be71;
+    transition: box-shadow 0.15s;
+}
+
+.play-again-btn:hover {
+    box-shadow: rgba(21, 68, 38, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
