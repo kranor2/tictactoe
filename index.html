@@ -4,38 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kranor2 | Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <h1>Tic Tac Toe</h1>
-    </header>
-
-    <section>
-        <div class="game-board">
-            <div class="col"> 
-                <div class="top" id="top1"></div>
-                <div class="top" id="top2"></div>
-                <div class="top" id="top3"></div>
+    <h1>Tic Tac Toe</h1>
+    <div class="player-menu">
+        <form action="">
+            <div>
+                <label for="player1">Player 1's Name:</label>
+                <input type="text" id="player1">
             </div>
-            <div class="col"> 
-                <div class="mid" id="mid1"></div>
-                <div class="mid" id="mid2"></div>
-                <div class="mid" id="mid3"></div>
+            <div>
+                <label for="player2">Player 2's Name:</label>
+                <input type="text" id="player2">
             </div>
-            <div class="col"> 
-                <div class="bottom" id="bottom1"></div>
-                <div class="bottom" id="bottom2"></div>
-                <div class="bottom" id="bottom3"></div>
+            <div>
+                <button class="start">Start</button>
             </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div id="Result"></div>
-        <button id="quit">Quit</button>
-        <button id="restart">Restart</button>
-    </footer>
-    <script src="app.js"></script>
+        </form>
+    </div>
+    <div class="game-over-modal hidden">
+    </div>
+    <script type="module" src="./scripts/app.js"></script>
 </body>
 </html>
