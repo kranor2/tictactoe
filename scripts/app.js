@@ -121,7 +121,7 @@ function Game() {
         getBoard: board.getBoard,
         getActivePlayer,
         getResult,
-        resetGame,
+        gameReset,
     }
 }
 
