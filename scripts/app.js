@@ -201,7 +201,7 @@ function ScreenController() {
             gameOverScreen.classList.add("hidden");
             gameScreen.classList.remove("faded");
 
-            game.resetGame()
+            game.gameReset()
             renderBoard();
         }
 
