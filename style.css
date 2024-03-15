@@ -1,6 +1,4 @@
 @font-face {
-    font-family: "Decovar";
-    src: url(./fonts/Decovar_font/fonts/Decovar-VF.ttf);
     font-family: "Jose Carlos Latorre";
     src: url(./fonts/jose-carlos-latorre\ _font/Jose.ttf);
 }
@@ -15,7 +13,7 @@ body {
 }
 
 h1 {
-    font-family: "Decovar", "Helvetica", sans-serif;
+    font-family: "Jose Carlos Latorre", "Helvetica", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
